@@ -51,7 +51,7 @@ const {name}: React.FC<{name}Props> = ({{ children }}) => <div className="{class
 export default {name};
 """
     modifications_snapshot = {}
-    with open(f"src/app/TWcomponents/{name}.tsx", "w") as f:
+    with open(f"src/app/TWComponents/{name}.tsx", "w") as f:
         f.write(component_code)
     for root, _, files in os.walk("src/app"):
         for file in files:
@@ -68,10 +68,10 @@ export default {name};
                     tag = match.group(1)
                     content = replace_matching_tags(content, tag, name, classes)
                     relative_path = os.path.relpath(
-                        "src/app/TWcomponents", root
+                        "src/app/TWComponents", root
                     ).replace("\\", "/")
-                    if relative_path == "TWcomponents":
-                        relative_path = "./TWcomponents"
+                    if relative_path == "TWComponents":
+                        relative_path = "./TWComponents"
                     import_statement = f"import {name} from '{relative_path}/{name}';"
                     imports = re.findall(r"^import .+;?$", content, re.MULTILINE)
                     if imports:
@@ -101,7 +101,7 @@ def ungenerate():
         snapshot = json.load(f)
     component_name = snapshot["component_name"]
     modifications_snapshot = snapshot["modifications"]
-    component_file_path = f"src/app/TWcomponents/{component_name}.tsx"
+    component_file_path = f"src/app/TWComponents/{component_name}.tsx"
     if os.path.exists(component_file_path):
         os.remove(component_file_path)
     for file_path, original_content in modifications_snapshot.items():
