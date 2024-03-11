@@ -3,6 +3,13 @@
 max_num=-1
 declare -A file_map
 
+read -p "Do you want to run this script in the directory you are currently in? (y/n): " use_current_directory
+
+if [[ $use_current_directory != "y" ]]; then
+	read -p "Enter the directory in which you want this script to run in (use absolute path (start with ~/)): " directory_for_script_to_run_in
+	cd "${directory_for_script_to_run_in/#\~/$HOME}" || exit
+fi	
+
 for file in *.{jpg,png}; do
 	if [[ -f "$file" ]]; then
 		num=${file%.*}
