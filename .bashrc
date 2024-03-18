@@ -7,6 +7,11 @@ alias grep='grep --color=auto'
 alias btr='linux-terminal-battery-status'
 PS1='[\u@\h \W]\$ '
 
+
+alias grep='grep --color=auto'
+alias btr='linux-terminal-battery-status'
+PS1='[\u@\h \W]\$ '
+
 # Aliases over .zshrc and .bashrc being automatically the same start
 while read -r alias_definition; do 
     eval "alias $alias_definition"
@@ -122,6 +127,10 @@ done << EOF
     gzb='rm -rf ~/.zshrc; rm -rf ~/.bashrc; cp ~/Documents/git/github/Scripts/.zshrc ~/.zshrc; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc'
 
     szb='source ~/.zshrc ; rm -rf ~/.bashrc ; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc ; ~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh ; source ~/.bashrc'
+
+    szbg='source ~/.zshrc ; rm -rf ~/.bashrc ; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc ; ~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh ; source ~/.bashrc rm -rf ~/Documents/git/github/Scripts/.zshrc; rm -rf ~/Documents/git/github/Scripts/.bashrc; cp ~/.zshrc ~/Documents/git/github/Scripts/.zshrc; cp ~/.bashrc ~/Documents/git/github/Scripts/.bashrc'
+
+    br='brave'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 
