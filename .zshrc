@@ -218,9 +218,21 @@ done << EOF
 
     szb='source ~/.zshrc ; rm -rf ~/.bashrc ; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc ; ~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh ; source ~/.bashrc'
 
-    szbg='source ~/.zshrc ; rm -rf ~/.bashrc ; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc ; ~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh ; source ~/.bashrc rm -rf ~/Documents/git/github/Scripts/.zshrc; rm -rf ~/Documents/git/github/Scripts/.bashrc; cp ~/.zshrc ~/Documents/git/github/Scripts/.zshrc; cp ~/.bashrc ~/Documents/git/github/Scripts/.bashrc'
+    szbg='source ~/.zshrc ; rm -rf ~/.bashrc ; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc ; ~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh ; source ~/.bashrc rm -rf ~/Documents/git/github/Scripts/.zshrc; rm -rf ~/Documents/git/github/Scripts/.bashrc; cp ~/.zshrc ~/Documents/git/github/Scripts/.zshrc; cp ~/.bashrc ~/Documents/git/github/Scripts/.bashrc; cd ~/Documents/git/github/Scripts; git add .; git commit -m "new"; git push'
 
     br='brave'
+
+    aus='yt-dlp -x --audio-format mp3'
+
+    au='mplayer'
+
+    ash='cd ~/Music; mplayer -shuffle *.mp3'
+
+    ass='cd ~/Music; mplayer -af scaletempo -speed 1.5 -shuffle *.mp3'
+
+    vs='yt-dlp bestvideo+bestaudio'
+
+    hi='history'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 
