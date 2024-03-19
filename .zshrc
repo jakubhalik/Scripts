@@ -239,7 +239,8 @@ done << EOF
     sx='source ~/.xinitrc'
 
     hb='du -h'
+
+    cfz='xsel --clipboard < ~/.zshrc'    
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
-
-alias 
+#
