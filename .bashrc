@@ -32,6 +32,11 @@ alias grep='grep --color=auto'
 alias btr='linux-terminal-battery-status'
 PS1='[\u@\h \W]\$ '
 
+
+alias grep='grep --color=auto'
+alias btr='linux-terminal-battery-status'
+PS1='[\u@\h \W]\$ '
+
 # Aliases over .zshrc and .bashrc being automatically the same start
 while read -r alias_definition; do 
     eval "alias $alias_definition"
@@ -171,6 +176,8 @@ done << EOF
     hb='du -h'
 
     cfz='xsel --clipboard < ~/.zshrc'    
+
+    die='sudo systemctl poweroff' 
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 

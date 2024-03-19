@@ -241,6 +241,8 @@ done << EOF
     hb='du -h'
 
     cfz='xsel --clipboard < ~/.zshrc'    
+
+    die='sudo systemctl poweroff' 
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 #
