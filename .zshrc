@@ -233,6 +233,12 @@ done << EOF
     vs='yt-dlp bestvideo+bestaudio'
 
     hi='history'
+
+    x='vim .xinitrc'
+
+    sx='source ~/.xinitrc'
+
+    hb='du -h'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 
