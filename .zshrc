@@ -118,19 +118,15 @@ done << EOF
 
     cg='cd ~/Documents/git/github'
 
-    zb='~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh'
-
     cs='cd ~/Documents/git/github/Scripts'
-
-    bb='cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc'
-
-    rbzb='rm -rf ~/.bashrc ; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc ; ~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh'
 
     cl='~/Documents/git/github/Scripts/countLines.sh'
 
-    us='setxkbmap us'
+    se='setxkbmap'
 
-    cz='setxkbmap cz'
+    us='se us'
+
+    cz='se cz'
 
     s='cd src'
 
@@ -150,31 +146,41 @@ done << EOF
 
     al='alsamixer'
 
-    z='nvim ~/.zshrc'
+    nv='nvim'
+
+    z='nv ~/.zshrc'
 
     vz='vim ~/.zshrc'
 
-    ba='nvim ~/.bashrc'
+    ba='nv ~/.bashrc'
 
     vb='vim ~/.bashrc'
 
-    sz='source ~/.zshrc'
+    so='source'
 
-    sb='source ~/.bashrc'
+    sz='so ~/.zshrc'
 
-    i='sudo pacman -S'
+    sb='so ~/.bashrc'
 
-    u='sudo pacman -Syu'
+    sp='sudo pacman'
 
-    pi='paru -S'
+    i='sp -S'
 
-    pu='paru -Syu'
+    u='sp -Syu'
 
-    ys='yay -S'
+    pa='paru'
 
-    yu='yay -Syu'
+    pi='pa -S'
 
-    stc='nvim ~/.local/src/st/config.h'
+    pu='pa -Syu'
+
+    y='yay'
+
+    ys='y -S'
+
+    yu='y -Syu'
+
+    stc='nv ~/.local/src/st/config.h'
 
     str='cd ~/.local/src/st'
 
@@ -184,17 +190,17 @@ done << EOF
 
     p='cd public'
 
-    np='nvim page.tsx'
+    np='nv page.tsx'
 
     n='npm run dev'
 
-    nt='npm run dev | tee dev.log'
+    t='tee dev.log'
+
+    nt='n | t'
 
     bu='npm run build'
 
-    bt='npm run build | tee dev.log'
-
-    m='cd ~/Music'
+    bt='bu | t'
 
     doc='cd ~/Documents'
 
@@ -210,15 +216,19 @@ done << EOF
 
     si='~/Documents/git/github/Scripts/saveImgsFromInternetInOrder.sh'
 
-    nv='nvim'
+    zb='~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh'
+
+    bb='cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc'
+
+    rbzb='rm -rf ~/.bashrc; bb; zb'
 
     zbg='rm -rf ~/Documents/git/github/Scripts/.zshrc; rm -rf ~/Documents/git/github/Scripts/.bashrc; cp ~/.zshrc ~/Documents/git/github/Scripts/.zshrc; cp ~/.bashrc ~/Documents/git/github/Scripts/.bashrc'
 
-    gzb='rm -rf ~/.zshrc; rm -rf ~/.bashrc; cp ~/Documents/git/github/Scripts/.zshrc ~/.zshrc; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc'
+    gzb='rm -rf ~/.zshrc; rm -rf ~/.bashrc; cp ~/Documents/git/github/Scripts/.zshrc ~/.zshrc; bb'
 
-    szb='source ~/.zshrc ; rm -rf ~/.bashrc ; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc ; ~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh ; source ~/.bashrc'
+    szb='so ~/.zshrc; rbzp; so ~/.bashrc; zsh'
 
-    szbg='source ~/.zshrc ; rm -rf ~/.bashrc ; cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc ; ~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh ; source ~/.bashrc rm -rf ~/Documents/git/github/Scripts/.zshrc; rm -rf ~/Documents/git/github/Scripts/.bashrc; cp ~/.zshrc ~/Documents/git/github/Scripts/.zshrc; cp ~/.bashrc ~/Documents/git/github/Scripts/.bashrc; cd ~/Documents/git/github/Scripts; git add .; git commit -m "new"; git push'
+    szbg='szb; zbg; cd ~/Documents/git/github/Scripts; git add .; git commit -m "new"; git push'
 
     br='brave'
 
@@ -226,9 +236,11 @@ done << EOF
 
     au='mplayer'
 
-    ash='cd ~/Music; mplayer -shuffle *.mp3'
+    m='cd ~/Music'
 
-    ass='cd ~/Music; mplayer -af scaletempo -speed 1.5 -shuffle *.mp3'
+    ash='m; au -shuffle *.mp3'
+
+    ass='m; au -af scaletempo -speed 1.5 -shuffle *.mp3'
 
     vs='yt-dlp bestvideo+bestaudio'
 
@@ -236,13 +248,17 @@ done << EOF
 
     x='vim .xinitrc'
 
-    sx='source ~/.xinitrc'
+    sx='so ~/.xinitrc'
 
     hb='du -h'
 
-    cfz='xsel --clipboard < ~/.zshrc'    
+    cfz='cf ~/.zshrc'    
 
-    die='sudo systemctl poweroff' 
+    sy='sudo systemctl'
+
+    die='sy poweroff' 
+
+    re='sy reboot'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 #
