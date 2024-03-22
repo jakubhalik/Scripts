@@ -262,7 +262,7 @@ done << EOF
 
     wi='nmcli dev wifi'
 
-    we='nmcli dev wifi connect'
+    we='wi connect'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 #
