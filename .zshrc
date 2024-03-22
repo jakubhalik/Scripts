@@ -196,6 +196,8 @@ done << EOF
 
     t='tee dev.log'
 
+    dl='nv dev.log'
+
     nt='n | t'
 
     bu='npm run build'
@@ -263,6 +265,22 @@ done << EOF
     wi='nmcli dev wifi'
 
     we='wi connect'
+
+    gl='cd ~/Documents/git/gitlab'
+
+    or='cd ~/Documents/git/gitlab/Orin'
+
+    odl='nv ~/Documents/git/gitlab/Orin/dev.log'
+
+    ot='nv ~/Documents/git/gitlab/Orin/types.ts'
+
+    na='nv ~/Documents/git/gitlab/Orin/src/app/components/AllRooms.tsx'
+
+    nac='nv ~/Documents/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
+
+    ca='cf ~/Documents/git/gitlab/Orin/src/app/components/AllRooms.tsx'
+
+    cac='cf ~/Documents/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 #
