@@ -259,6 +259,10 @@ done << EOF
     die='sy poweroff' 
 
     re='sy reboot'
+
+    wi='nmcli dev wifi'
+
+    we='nmcli dev wifi connect'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 #
