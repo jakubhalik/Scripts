@@ -281,6 +281,8 @@ done << EOF
     ca='cf ~/Documents/git/gitlab/Orin/src/app/components/AllRooms.tsx'
 
     cac='cf ~/Documents/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
+
+    dif='~/Documents/git/github/Scripts/different_rc_generating_based_on_files_structure.sh'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 #
