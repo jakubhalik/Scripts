@@ -283,6 +283,17 @@ done << EOF
     cac='cf ~/Documents/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
 
     dif='~/Documents/git/github/Scripts/different_rc_generating_based_on_files_structure.sh'
+
+    di='dict'
+
+    le='less'
+
+    lc='locate'
+
+    cy='cd ~/yay'
+
+    mp='makepkg -si'    
+
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 #
