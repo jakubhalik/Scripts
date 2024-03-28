@@ -116,11 +116,11 @@ done << EOF
 
     h='cd ~'
 
-    cg='cd ~/Documents/git/github'
+    cg='cd ~/git/github'
 
-    cs='cd ~/Documents/git/github/Scripts'
+    cs='cd ~/git/github/Scripts'
 
-    cl='~/Documents/git/github/Scripts/countLines.sh'
+    cl='~/git/github/Scripts/countLines.sh'
 
     se='setxkbmap'
 
@@ -142,7 +142,7 @@ done << EOF
 
     scu='cd src/components/ui'
 
-    k='cd ~/Documents/git/github/k12tabor'
+    k='cd ~/git/github/k12tabor'
 
     al='alsamixer'
 
@@ -184,7 +184,7 @@ done << EOF
 
     str='cd ~/.local/src/st'
 
-    o='cd ~/Documents/git/github/obsidian-notes'
+    o='cd ~/git/github/obsidian-notes'
 
     v='cd ~/Videos'
 
@@ -204,9 +204,9 @@ done << EOF
 
     bt='bu | t'
 
-    doc='cd ~/Documents'
+    doc='cd ~'
 
-    scr='cd ~/Documents/screenshots'
+    scr='cd ~/screenshots'
 
     f='feh'
 
@@ -216,21 +216,21 @@ done << EOF
 
     lh='i3lock -c 000000'
 
-    si='~/Documents/git/github/Scripts/saveImgsFromInternetInOrder.sh'
+    si='~/git/github/Scripts/saveImgsFromInternetInOrder.sh'
 
-    zb='~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh'
+    zb='~/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh'
 
-    bb='cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc'
+    bb='cp ~/git/github/Scripts/.bashrc ~/.bashrc'
 
     rbzb='rm -rf ~/.bashrc; bb; zb'
 
-    zbg='rm -rf ~/Documents/git/github/Scripts/.zshrc; rm -rf ~/Documents/git/github/Scripts/.bashrc; cp ~/.zshrc ~/Documents/git/github/Scripts/.zshrc; cp ~/.bashrc ~/Documents/git/github/Scripts/.bashrc'
+    zbg='rm -rf ~/git/github/Scripts/.zshrc; rm -rf ~/git/github/Scripts/.bashrc; cp ~/.zshrc ~/git/github/Scripts/.zshrc; cp ~/.bashrc ~/git/github/Scripts/.bashrc'
 
-    gzb='rm -rf ~/.zshrc; rm -rf ~/.bashrc; cp ~/Documents/git/github/Scripts/.zshrc ~/.zshrc; bb'
+    gzb='rm -rf ~/.zshrc; rm -rf ~/.bashrc; cp ~/git/github/Scripts/.zshrc ~/.zshrc; bb'
 
     szb='so ~/.zshrc; rbzp; so ~/.bashrc; zsh'
 
-    szbg='szb; zbg; cd ~/Documents/git/github/Scripts; git add .; git commit -m "new"; git push'
+    szbg='szb; zbg; cd ~/git/github/Scripts; git add .; git commit -m "new"; git push'
 
     br='brave'
 
@@ -266,23 +266,23 @@ done << EOF
 
     we='wi connect'
 
-    gl='cd ~/Documents/git/gitlab'
+    gl='cd ~/git/gitlab'
 
-    or='cd ~/Documents/git/gitlab/Orin'
+    or='cd ~/git/gitlab/Orin'
 
-    odl='nv ~/Documents/git/gitlab/Orin/dev.log'
+    odl='nv ~/git/gitlab/Orin/dev.log'
 
-    ot='nv ~/Documents/git/gitlab/Orin/types.ts'
+    ot='nv ~/git/gitlab/Orin/types.ts'
 
-    na='nv ~/Documents/git/gitlab/Orin/src/app/components/AllRooms.tsx'
+    na='nv ~/git/gitlab/Orin/src/app/components/AllRooms.tsx'
 
-    nac='nv ~/Documents/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
+    nac='nv ~/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
 
-    ca='cf ~/Documents/git/gitlab/Orin/src/app/components/AllRooms.tsx'
+    ca='cf ~/git/gitlab/Orin/src/app/components/AllRooms.tsx'
 
-    cac='cf ~/Documents/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
+    cac='cf ~/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
 
-    dif='~/Documents/git/github/Scripts/different_rc_generating_based_on_files_structure.sh'
+    dif='~/git/github/Scripts/different_rc_generating_based_on_files_structure.sh'
 
     di='dict'
 
@@ -294,6 +294,7 @@ done << EOF
 
     mp='makepkg -si'    
 
+    mc='sudo make clean install'
 EOF 
 # Aliases over .zshrc and .bashrc being automatically the same end
 #

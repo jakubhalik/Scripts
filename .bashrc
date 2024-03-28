@@ -187,6 +187,5 @@ EOF
 # Aliases over .zshrc and .bashrc being automatically the same end
 
 alias grep='grep --color=auto'
-alias btr='linux-terminal-battery-status'
 PS1='[\u@\h \W]\$ '
 
