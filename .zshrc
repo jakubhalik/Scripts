@@ -116,11 +116,11 @@ done << EOF
 
     h='cd ~'
 
-    cg='cd ~/git/github'
+    cg='cd ~/Documents/git/github'
 
-    cs='cd ~/git/github/Scripts'
+    cs='cd ~/Documents/git/github/Scripts'
 
-    cl='~/git/github/Scripts/countLines.sh'
+    cl='~/Documents/git/github/Scripts/countLines.sh'
 
     se='setxkbmap'
 
@@ -142,7 +142,7 @@ done << EOF
 
     scu='cd src/components/ui'
 
-    k='cd ~/git/github/k12tabor'
+    k='cd ~/Documents/git/github/k12tabor'
 
     al='alsamixer'
 
@@ -184,7 +184,7 @@ done << EOF
 
     str='cd ~/.local/src/st'
 
-    o='cd ~/git/github/obsidian-notes'
+    o='cd ~/Documents/git/github/obsidian-notes'
 
     v='cd ~/Videos'
 
@@ -204,9 +204,9 @@ done << EOF
 
     bt='bu | t'
 
-    doc='cd ~'
+    doc='cd ~/Documents'
 
-    scr='cd ~/screenshots'
+    scr='cd ~/Documents/screenshots'
 
     f='feh'
 
@@ -216,21 +216,21 @@ done << EOF
 
     lh='i3lock -c 000000'
 
-    si='~/git/github/Scripts/saveImgsFromInternetInOrder.sh'
+    si='~/Documents/git/github/Scripts/saveImgsFromInternetInOrder.sh'
 
-    zb='~/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh'
+    zb='~/Documents/git/github/Scripts/automatic_bashrc_aliases_changes_based_on_zshrc_aliases_changes.sh'
 
-    bb='cp ~/git/github/Scripts/.bashrc ~/.bashrc'
+    bb='cp ~/Documents/git/github/Scripts/.bashrc ~/.bashrc'
 
     rbzb='rm -rf ~/.bashrc; bb; zb'
 
-    zbg='rm -rf ~/git/github/Scripts/.zshrc; rm -rf ~/git/github/Scripts/.bashrc; cp ~/.zshrc ~/git/github/Scripts/.zshrc; cp ~/.bashrc ~/git/github/Scripts/.bashrc'
+    zbg='rm -rf ~/Documents/git/github/Scripts/.zshrc; rm -rf ~/Documents/git/github/Scripts/.bashrc; cp ~/.zshrc ~/Documents/git/github/Scripts/.zshrc; cp ~/.bashrc ~/Documents/git/github/Scripts/.bashrc'
 
-    gzb='rm -rf ~/.zshrc; rm -rf ~/.bashrc; cp ~/git/github/Scripts/.zshrc ~/.zshrc; bb'
+    gzb='rm -rf ~/.zshrc; rm -rf ~/.bashrc; cp ~/Documents/git/github/Scripts/.zshrc ~/.zshrc; bb'
 
     szb='so ~/.zshrc; rbzp; so ~/.bashrc; zsh'
 
-    szbg='szb; zbg; cd ~/git/github/Scripts; git add .; git commit -m "new"; git push'
+    szbg='szb; zbg; cd ~/Documents/git/github/Scripts; git add .; git commit -m "new"; git push'
 
     br='brave'
 
@@ -266,27 +266,27 @@ done << EOF
 
     we='wi connect'
 
-    gl='cd ~/git/gitlab'
+    gl='cd ~/Documents/git/gitlab'
 
-    or='cd ~/git/gitlab/Orin'
+    dif='~/Documents/git/github/Scripts/different_rc_generating_based_on_files_structure.sh'
 
-    odl='nv ~/git/gitlab/Orin/dev.log'
+    ac='m; au code.mp3'
 
-    ot='nv ~/git/gitlab/Orin/types.ts'
+    te='cd ~/temp; ls'
 
-    na='nv ~/git/gitlab/Orin/src/app/components/AllRooms.tsx'
+    mte='mkdir ~/temp'
 
-    nac='nv ~/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
-
-    ca='cf ~/git/gitlab/Orin/src/app/components/AllRooms.tsx'
-
-    cac='cf ~/git/gitlab/Orin/src/app/components/AllRoomsClient.tsx'
-
-    dif='~/git/github/Scripts/different_rc_generating_based_on_files_structure.sh'
+    pv='psql "postgres://default:O8ZwUciRsfj6@ep-gentle-shadow-a4t4d90h.us-east-1.aws.neon.tech:5432/verceldb?sslmode=require"'
 
     di='dict'
 
     le='less'
+
+    cgr='hunspell -d cs_CZ'
+
+    cr='clear'
+
+    di='dict'
 
     lc='locate'
 
